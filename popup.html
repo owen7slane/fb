@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 420px;
+      padding: 16px;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f0f2f5;
+    }
+    h2 {
+      margin: 0 0 12px 0;
+      font-size: 16px;
+      color: #1c1e21;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 8px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    #getBtn {
+      background: #1877f2;
+      color: white;
+    }
+    #importBtn {
+      background: #42b72a;
+      color: white;
+    }
+    #clearBtn {
+      background: #e4e6eb;
+      color: #050505;
+    }
+    textarea {
+      width: 100%;
+      height: 160px;
+      margin: 8px 0;
+      padding: 8px;
+      border: 1px solid #ccd0d5;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 12px;
+      resize: vertical;
+      box-sizing: border-box;
+    }
+    .status {
+      font-size: 13px;
+      margin-top: 8px;
+      min-height: 20px;
+    }
+    .success { color: #42b72a; }
+    .error { color: #f02849; }
+  </style>
+</head>
+<body>
+  <h2>FB Cookie Tool</h2>
+
+  <button id="getBtn">1. Lấy Cookie hiện tại</button>
+  <button id="importBtn">2. Import Cookie & Đăng nhập</button>
+  <button id="clearBtn">Xóa toàn bộ Cookie FB</button>
+
+  <textarea id="cookieArea" placeholder="Cookie sẽ hiện ở đây..."></textarea>
+
+  <div id="status" class="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
